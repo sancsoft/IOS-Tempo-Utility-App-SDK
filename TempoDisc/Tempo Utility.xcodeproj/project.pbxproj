@@ -781,8 +781,6 @@
 				CB16BA2E1C82E67E00C99C41 /* Sources */,
 				CB16BA2F1C82E67E00C99C41 /* Frameworks */,
 				CB16BA301C82E67E00C99C41 /* Resources */,
-				BE0F373F93A4DD57968C6DD8 /* [CP] Embed Pods Frameworks */,
-				87030393AA58A3B2D706F8E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -804,7 +802,7 @@
 				TargetAttributes = {
 					CB16BA311C82E67E00C99C41 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 3GCG7V8C8A;
+						DevelopmentTeam = 9DAVC8FABH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -814,6 +812,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -843,49 +842,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		87030393AA58A3B2D706F8E1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tempo Utility/Pods-Tempo Utility-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE0F373F93A4DD57968C6DD8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tempo Utility/Pods-Tempo Utility-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C4F3E125765D4FCB3E31C94E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tempo Utility-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1064,11 +1036,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Blue Maestro Ltd (3GCG7V8C8A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3GCG7V8C8A;
+				DEVELOPMENT_TEAM = 9DAVC8FABH;
 				GCC_PREFIX_HEADER = "TempoDisc/Tempo UtilityPCH.pch";
 				INFOPLIST_FILE = TempoDisc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bluemaestro.TempoDisc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sancsoft.TempoDisc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1082,11 +1054,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Blue Maestro Ltd (3GCG7V8C8A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3GCG7V8C8A;
+				DEVELOPMENT_TEAM = 9DAVC8FABH;
 				GCC_PREFIX_HEADER = "TempoDisc/Tempo UtilityPCH.pch";
 				INFOPLIST_FILE = TempoDisc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.bluemaestro.TempoDisc;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sancsoft.TempoDisc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

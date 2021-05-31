@@ -8,6 +8,12 @@ DEPENDENCIES:
   - LGBluetooth (~> 1.1.5)
   - MBProgressHUD (~> 0.9)
 
+SPEC REPOS:
+  trunk:
+    - CorePlot
+    - LGBluetooth
+    - MBProgressHUD
+
 SPEC CHECKSUMS:
   CorePlot: b7f422ad363f2b0e48152471d6da45ce232eb8c6
   LGBluetooth: 8407d2de27bcbd4a9e11243290b928293ffa8881
@@ -15,4 +21,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 815826d497867b0864797a0c80cce1da21ef97fb
 
-COCOAPODS: 1.2.0.rc.1
+COCOAPODS: 1.10.0
